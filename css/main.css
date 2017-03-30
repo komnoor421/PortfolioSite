@@ -1,0 +1,247 @@
+body {
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+#navbar_container {
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: 2s;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.11);
+}
+.navbar {
+	border-radius: 0;
+	margin: 0px;
+}
+
+.navbar-default {
+	background-color: #091233;
+	border: 1px #061824;
+}
+.navbar-default .navbar-brand {
+	color: white;
+	font-size: 35px;
+}
+.navbar-default a.navbar-brand:hover {
+	background-color: transparent;
+	color: white;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+.nav > li {
+	padding: 0px 20px;
+	font-size: 20px;
+}
+.navbar-default .navbar-nav > li:hover {
+	background-color: white;
+	color: #091233;
+}
+.navbar-default .navbar-nav > li:hover > a{
+	background-color: white;
+	color: #091233;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: white;
+}
+.navbar-default .navbar-nav > li.active {
+	background-color: white;
+	color: #091233;
+}
+.navbar-default .navbar-nav > li.active > a {
+	background-color: white;
+	color: #091233;
+}
+.verticalCenter {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.jumbotron {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	background-image: url('../img/big-wire-globe-fc-hi.png');
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: center;
+	height: 100vh;
+}
+.jumbotron h1 {
+	font-size: 71px;
+}
+.jumbotron p {
+	font-size: 32px;
+}
+.imgText {
+	color: #091233;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.container-home {
+	height: 100%;
+	position: relative;
+}
+#headline1 {
+ 	display: none;
+ 	text-align: center;
+	margin-left: 0px;
+}
+#headline1 h2 {
+	margin-bottom: 90px;
+}
+#headline1 a {
+	border: 1px #091233 solid;
+	padding: 10px 20px;
+	color: white;
+	background-color: #091233;
+	border-radius: 4px;
+	font-size: 20px;
+	text-decoration: none;
+}
+#headline1 a:last-child {
+	margin-left: 10px;
+}
+#resumeBody h1 {
+	color: #091233;
+	text-align: center;
+	margin-top: 85px;
+	margin-bottom: 25px;
+}
+.media {
+	margin: 0 auto;
+}
+.headButton {
+	-webkit-animation-duration: 3s;
+}
+.footer_container {
+	background-color: #3C444C;
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+	position: fixed;
+	bottom: 0;
+	-webkit-animation-delay: 2.5s;
+	-webkit-animation-duration: 2.5s;
+}
+.container h3 {
+	margin: 0;
+	padding: 10px 0px;
+	font-size: 18px;
+	color: #A6A6A6;
+}
+#aboutBody {
+
+}
+.profileImg {
+	width: 75%;
+}
+.aboutInfo h3 {
+	color: #091233;
+	font-size: 30px;
+	text-align: left;
+}
+#contactBody {
+	color: #091233;
+}
+#contactBody h1 {
+	text-align: center;
+}
+.center-block {
+	width: 230px;
+}
+#projectsBody {
+	position: absolute;
+	top: 20%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+/* Bootstrap Social Overwriting Styles */
+
+.btn-social {
+	padding-left: 73px !important;
+}
+
+.btn {
+	padding: 16px 32px;
+	font-size: 17px;
+}
+
+.btn-social > :first-child {
+	width: 45px;
+	line-height: 56px;
+	height: 58px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+
+	.profileImg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.aboutInfo {
+		margin-top: 30px;
+	}
+
+	.aboutInfo h3 {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 920px) {
+
+	.nav > li {
+		padding: 0px 5px;
+	}
+	.jumbotron {
+		background-size: 100%;
+	}
+
+}
+
+/* TABLET DEVICE STYLING */
+
+@media screen and (max-width: 768px){
+
+	.jumbotron h1 {
+		font-size: 55px;
+	}
+
+	.profileImg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+}
+
+/* MOBILE DEVICE STYLING */
+
+@media screen and (max-width: 580px){
+
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.jumbotron h2 {
+		font-size: 25px;
+	}
+	.navbar-default .navbar-brand  {
+		font-size: 25px;
+	}
+	#headline1 h2 {
+		margin-bottom: 70px;
+	}
+
+	.aboutInfo h3 {
+		font-size: 15px;
+	}
+
+}
