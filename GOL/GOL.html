@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+html
+{
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    background-color: #c5c5c5;
+}
+table
+{
+    margin: auto;
+    border-spacing: 0px;
+    border: 1px solid black;
+}
+td
+{
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+#grid, #buttons, #output
+{
+    visibility: hidden;
+}
+#sizeinput
+{
+    visibility: visible;
+}
+</style>
+<head>
+    <title>The Game Of Life</title>
+    <script type="text/javascript" src="GOL.js"></script>
+</head>
+
+<body>
+
+<h1><u>The Game of Life</u></h1>
+
+
+<p id="sizeinput">Please select size of grid:
+    <input type="text" id="rows"> x <input type="text" id="columns">
+    <button onclick="makeGrid()">Produce</button>
+</p>
+
+<table id="grid"></table><br>
+
+<div id="buttons">
+	<button onclick="Random()">Random</button>
+	<span id="startButton"><button onclick="Start()">Start</button></span>
+	<button onclick="Stop()">Stop</button>
+	<button onclick="Inc()">Step 1 Generation</button>
+	<button onclick="Inc23()">Step 23 Generations</button>
+	<button onclick="Reset()">Reset</button>
+    <button onclick="Reload()">New Grid Size</button>
+</div>
+
+<p id="output">Generation: 0<br>Population: 0
+</p>
+
+<p id="value"></p>
+
+<body>
+</html>

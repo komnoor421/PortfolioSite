@@ -148,13 +148,36 @@ body {
 	text-align: center;
 }
 .center-block {
-	width: 230px;
+	width: 234px;
 }
 #projectsBody {
-	position: absolute;
-	top: 20%;
-	transform: translateY(-50%);
+	margin-top: 90px;
+}
+#projectsBody .row {
+	padding-top: 20px;
+	color: #091233;
+}
+#projectsBody p {
+	font-size: 17px;
+	margin-bottom: 35px;
+}
+.projectImg {
 	width: 100%;
+}
+.projectButton {
+	border: 1px #091233 solid;
+	padding: 7px 16px;
+	color: white;
+	background-color: #091233;
+	border-radius: 4px;
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.projectButton:hover {
+	text-decoration: none;
+	color: #091233;
+	background-color: white;
 }
 
 /* Bootstrap Social Overwriting Styles */
