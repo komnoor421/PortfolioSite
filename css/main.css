@@ -165,8 +165,8 @@ body {
 .projectImg {
 	width: 100%;
 }
-#Project2 .projectImg {
-	border: 1.5px solid black;
+#Project2 .projectImg, #Project3 .projectImg {
+	border: 1px solid black;
 }
 .projectButton {
 	border: 1px #091233 solid;
